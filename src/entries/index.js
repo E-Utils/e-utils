@@ -1,3 +1,3 @@
-console.log(1111);
-const test = '';
-console.log(test);
+import eUtils from '../utils';
+
+console.log(222, eUtils.replaceAll('sssdddsss', 's', 'k'));
