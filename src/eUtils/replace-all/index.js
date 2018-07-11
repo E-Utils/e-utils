@@ -4,9 +4,9 @@
  *
  * @since 1.0.0;
  * @category string;
- * @author fl;
+ * @author fl2294;
  * @param str {string} the first string incoming;
- * @param pattern {string|regexp} the second (string|regexp) incoming;
+ * @param sourcement {string} the second (string|regexp) incoming;
  * @param replacement {string} the second string incoming;
  * @return {string};
  * @create_date 2018/07/06;
@@ -20,20 +20,10 @@
 function replaceAll(...args) {
   if (args.length < 3) return args[0];
   const str = args[0];
-  let pattern = args[1];
+  const sourcement = args[1];
   const replacement = args[2];
-  const type = Object.prototype.toString.call(pattern);
-  if (type === '[object String]') {
-    const raRegExp = new RegExp(pattern, 'g');
-    return str.replace(raRegExp, replacement);
-  }
-  let { flags } = pattern;
-  const { source } = pattern;
-  if (flags.indexOf('g') === -1) {
-    flags += 'g';
-    pattern = new RegExp(source, flags);
-  }
-  return str.replace(pattern, replacement);
+  const raRegExp = new RegExp(sourcement, 'g');
+  return str.replace(raRegExp, replacement);
 }
 
 export default replaceAll;

@@ -1,21 +1,21 @@
 /**
- * All down to lowercase.
+ * All down to uppercase
  *
  * @since 1.0.0;
  * @category string;
- * @author fl;
+ * @author fl2294;
  * @param str {string} the first string incoming;
  * @return {string};
  * @create_date 2018/07/06;
  * @modify_date 2018/07/06;
  * @example
  *
- * toLower(’AAA')
- * // => 'aaa'
+ * toUpper('aaa')
+ * // => 'AAA'
  */
 
-function toLower(str) {
-  return str.toLowerCase();
+function toUpper(str) {
+  return str.toUpperCase();
 }
 
-export default toLower;
+export default toUpper;

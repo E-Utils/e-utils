@@ -1,3 +1,4 @@
-import eUtils from '../utils';
+import { replace, replaceAll } from 'fll2';
 
-console.log(222, eUtils.replaceAll('sssdddsss', 's', 'k'));
+console.log(222, replace('sssdddsss', 'sss', 'g'));
+console.log(222, replaceAll('sssdddsss', 'sss', 'g'));

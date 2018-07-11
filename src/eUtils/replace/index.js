@@ -14,7 +14,7 @@
  * @modify_date 2018/07/06;
  * @example
  *
- * replace('hello world', 'hello', 'hi')
+ * replace('hello world', /o/, 'hi')
  * // => 'hi world'
  */
 

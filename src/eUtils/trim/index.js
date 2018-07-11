@@ -4,7 +4,7 @@
  *
  * @since 1.0.0;
  * @category string;
- * @author fl;
+ * @author fl2294;
  * @param str {string} the first string incoming;
  * @param chars {string} the second string incoming;
  * @return {string};

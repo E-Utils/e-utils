@@ -2,7 +2,7 @@
   "name": "react-ie8",
   "version": "1.0.0",
   "description": "铭师堂",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "start": "npm run dev",
     "dev": "cross-env NODE_ENV=development webpack-dev-server   --inline --progress --config build/webpack.dev.conf.js",
@@ -27,6 +27,7 @@
     "babel-eslint": "^8.2.5",
     "babel-jest": "^23.0.1",
     "babel-loader": "^6.2.0",
+    "babel-plugin-import": "^1.8.0",
     "babel-plugin-transform-runtime": "^6.23.0",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-es2015-loose": "^8.0.0",
