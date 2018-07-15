@@ -3,7 +3,7 @@
 ## 项目简介
 
 ```
-  本项目为commonjs公共方法库项目，为前端提供基础方法库的实现，本项目所有实现兼容到IE8。
+  本项目为e-utils公共方法库项目，为前端提供基础方法库的实现，本项目所有实现兼容到IE8。
 ```
 
 # 构建说明 （ie8）
@@ -11,7 +11,7 @@
 ## 目录结构
 
 ```
-react-scaffold
+e-utils
 └── build
     └── utils
     └── webpack.base.conf.js
@@ -22,19 +22,8 @@ react-scaffold
     └── index.js
     └── prod.env.js
 └── src
-    └── api
-    └── assets
-      └── images
-    └── components
-    └── entries
-        └── index
-            └── index.html
-            └── index.js
-    └── routes
-    └── store
-    └── style
-    └── utils
-    └── views
+    └── eBiz
+    └── eUtils
 ├── .babelrc
 ├── .gitignore
 ├── package.json
