@@ -26,7 +26,7 @@ exports.htmlPlugin = (globPath) => {
             // 文件名称
             filename: file,
             // 页面模板需要加对应的js脚本，如果不加这行则每个页面都会引入所有的js脚本
-            chunks: ['manifest', 'vendor', filename],
+            chunks: ['manifest', filename],
             inject: true
         }
         if (process.env.NODE_ENV === 'production') {

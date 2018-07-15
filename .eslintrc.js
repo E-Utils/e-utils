@@ -10,11 +10,11 @@ module.exports =  {
     },
     "plugins": [],
     "rules": {
-      "indent": [2, 4, { "SwitchCase": 1 }],
+      "indent": [2, 2, { "SwitchCase": 1 }],
       "object-curly-spacing": [0, "never"],
       "global-require": "off",
       "import/no-unresolved": "off",
-      "no-console": process.env.NODE_ENV === 'production' ? '2' : 'off',
+      "no-console": process.env.NODE_ENV === 'production' ? 'off' : 'off',
       "no-debugger": process.env.NODE_ENV === 'production' ? 'error' : 'off',
       "no-underscore-dangle": "off",
       "no-new-func": "off",

@@ -5,7 +5,7 @@ const config = require('../config')
 function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
-const entries = utils.entries('src/entries/**/*.js', 'src')
+const entries = utils.entries('src/**/*.js', 'src')
 module.exports  = {
     context: path.resolve(__dirname, '../'),
     disableHostCheck: true,
