@@ -6,13 +6,13 @@ function resolve(dir) {
     return path.join(__dirname, '..', dir)
 }
 const entries = utils.entries('src/**/*.js', 'src')
+
 module.exports  = {
     context: path.resolve(__dirname, '../'),
     disableHostCheck: true,
     entry: entries,
     output: {
         path: config.build.assetsRoot,
-        chunkFilename: '[name].chunk.js',
         filename: '[name].js',
         publicPath: process.env.NODE_ENV === 'production'
             ? config.build.assetsPublicPath

@@ -11,7 +11,7 @@ const webpackConfig = merge(baseWebpackConfig, {
   devtool: config.build.productionSourceMap ? config.build.devtool : false,
   output: {
     path: config.build.assetsRoot,
-    filename: utils.assetsPath('js/[name].js'),
+    filename: utils.assetsPath('[name].js'),
     chunkFilename: utils.assetsPath('js/[id].[chunkhash].js')
   },
   plugins: [
@@ -19,11 +19,6 @@ const webpackConfig = merge(baseWebpackConfig, {
       'process.env': require('../config/prod.env')
     }),
     new Es3ifyPlugin(),
-    new webpack.ProvidePlugin({
-        $: "jquery",
-        jQuery: "jquery",
-        "window.jQuery": "jquery"
-    })
   ]
 })
 
