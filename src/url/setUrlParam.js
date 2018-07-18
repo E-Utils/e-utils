@@ -7,7 +7,7 @@
  * @param paramsObject {Object} param object;
  * @return no return
  * @create_date 2018/07/09;
- * @modify_date 2018/07/09;
+ * @modify_date 2018/07/18;
  * @example
  *
  * current location href => http://web.ewt360.com
