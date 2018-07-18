@@ -27,14 +27,14 @@
 function setUrlParam(targetParams, originUrl = window.location.href) {
   let resultUrl = originUrl;
   Object.entries(targetParams).forEach(([key, value]) => {
-    const replaceReg = new RegExp('(^|)'.concat(key).concat('=([^&]*)(|$)'));
-    const replaceText = key.concat('=').concat(value);
+    const replaceReg = new RegExp(`(^|)${key}=([^&]*)(|$)`);
+    const replaceText = `${key}=${value}`;
     if (resultUrl.match(replaceReg)) {
-      const tmpReg = new RegExp('('.concat(key).concat('=)([^&]*)'), 'gi');
-      resultUrl = originUrl.replace(tmpReg, replaceText);
+      const tmpReg = new RegExp(`(${key}=)([^&]*)`, 'gi');
+      resultUrl = resultUrl.replace(tmpReg, replaceText);
     } else {
-      const joinFlag = originUrl.match('[?]') ? '&' : '?';
-      resultUrl = originUrl.concat(joinFlag).concat(replaceText);
+      const joinFlag = resultUrl.match('[?]') ? '&' : '?';
+      resultUrl = `${resultUrl}${joinFlag}${replaceText}`;
     }
   });
   return resultUrl;
