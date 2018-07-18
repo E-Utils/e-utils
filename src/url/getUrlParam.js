@@ -16,7 +16,9 @@
 function getUrlParam(name) {
   const reg = new RegExp('(^|&)'.concat(name).concat('=([^&]*)(&|$)'), 'i');
   const result = window.location.search.substr(1).match(reg);
-  if (result != null) return unescape(result[2]);
+  if (result != null) {
+    return unescape(result[2]);
+  }
   return '';
 }
 

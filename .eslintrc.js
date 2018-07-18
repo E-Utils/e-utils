@@ -10,6 +10,7 @@ module.exports =  {
     },
     "plugins": [],
     "rules": {
+      "indent": [2, 2, { "SwitchCase": 1 }],
       "object-curly-spacing": [0, "never"],
       "global-require": "off",
       "import/no-unresolved": "off",
