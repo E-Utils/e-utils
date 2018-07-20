@@ -26,17 +26,21 @@
  */
 function setUrlParam(targetParams, originUrl = window.location.href) {
   let resultUrl = originUrl;
-  Object.entries(targetParams).forEach(([key, value]) => {
-    const replaceReg = new RegExp(`(^|)${key}=([^&]*)(|$)`);
-    const replaceText = `${key}=${value}`;
-    if (resultUrl.match(replaceReg)) {
-      const tmpReg = new RegExp(`(${key}=)([^&]*)`, 'gi');
-      resultUrl = resultUrl.replace(tmpReg, replaceText);
-    } else {
-      const joinFlag = resultUrl.match('[?]') ? '&' : '?';
-      resultUrl = `${resultUrl}${joinFlag}${replaceText}`;
-    }
-  });
+  Object
+    .entries(targetParams)
+    .forEach(([key, value]) => {
+      const replaceReg = new RegExp(`(^|)${key}=([^&]*)(|$)`);
+      const replaceText = `${key}=${value}`;
+      if (resultUrl.match(replaceReg)) {
+        const tmpReg = new RegExp(`(${key}=)([^&]*)`, 'gi');
+        resultUrl = resultUrl.replace(tmpReg, replaceText);
+      } else {
+        const joinFlag = resultUrl.match('[?]')
+          ? '&'
+          : '?';
+        resultUrl = `${resultUrl}${joinFlag}${replaceText}`;
+      }
+    });
   return resultUrl;
 }
 
