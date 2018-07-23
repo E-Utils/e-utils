@@ -1,7 +1,5 @@
-import say from './dateFormat';
-import sayHello from './sayHello';
+import dateFormat from './dateFormat';
 
 export default {
-  say,
-  sayHello,
+  dateFormat,
 };
