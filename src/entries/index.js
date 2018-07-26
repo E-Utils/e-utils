@@ -1,4 +1,3 @@
-import { replace, replaceAll } from 'fll2';
+import * as eUtils from 'ff3';
 
-console.log(222, replace('sssdddsss', 'sss', 'g'));
-console.log(222, replaceAll('sssdddsss', 'sss', 'g'));
+console.log(222, eUtils.trim('sssdddsss', 'sss'));

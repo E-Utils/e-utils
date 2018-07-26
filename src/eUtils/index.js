@@ -1,5 +1,13 @@
-export { default as replace } from './replace/index';
-export { default as replaceAll } from './replace-all/index';
-export { default as trim } from './trim/index';
-export { default as toUpper } from './to-upper/index';
-export { default as toLower } from './to-lower/index';
+import replace from './replace';
+import replaceAll from './replaceAll';
+import trim from './trim';
+import toUpper from './toUpper';
+import toLower from './toLower';
+
+export {
+  replace,
+  replaceAll,
+  trim,
+  toUpper,
+  toLower,
+};

@@ -1,11 +1,3 @@
 {
-  "presets": ["es2015", "stage-2"],
-  "plugins": [
-    "babel-plugin-transform-runtime",
-    "transform-runtime",
-    ["import", {
-      "libraryName":"fll2",
-      "libraryDirectory": "lib"
-    }]
-  ]
+  "presets": ["./.babelrc.js"]
 }
