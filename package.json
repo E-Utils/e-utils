@@ -18,7 +18,7 @@
     "console-polyfill": "^0.3.0",
     "es5-shim": "^4.5.9",
     "es6-promise": "^3.0.2",
-    "fetch-ie8": "^1.4.0"
+    "fetch-ie8": "^1.4.0",
   },
   "devDependencies": {
     "autoprefixer": "^8.5.2",
