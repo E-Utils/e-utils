@@ -13,12 +13,12 @@
  * getUrlParam('token')
  * // => '807351-999-1asdni7asdn61621e8'
  */
-function getUrlParam(name) {
-  const reg = new RegExp('(^|&)'.concat(name).concat('=([^&]*)(&|$)'), 'i');
-  const result = window
-    .location
-    .search
-    .substr(1)
+function getUrlParam(key, originUrl) {
+  const reg = new RegExp('(^|&)'.concat(key).concat('=([^&]*)(&|$)'), 'i');
+  originUrl = originUrl ? originUrl.toString() : window.location.href;
+  const index = originUrl.indexOf('?');
+  const result = originUrl
+    .substr(index + 1)
     .match(reg);
   if (result != null) {
     return unescape(result[2]);
