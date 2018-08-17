@@ -1,6 +1,6 @@
 {
   "name": "e-utils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "E-Utils -- Ewt front end common js lib!",
   "main": "src/index.js",
   "lib": "dist/eUtils.min.js",
