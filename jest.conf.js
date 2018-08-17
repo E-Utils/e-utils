@@ -7,7 +7,7 @@ module.exports = {
   moduleNameMapper: {'^@/(.*)$': '<rootDir>/src/$1',},
   transform: {'^.+\\.js$': '<rootDir>/node_modules/babel-jest',},
   testPathIgnorePatterns: ['<rootDir>/test/e2e',],
-  coverageDirectory: '<rootDir>/test/',
+  coverageDirectory: '<rootDir>/test/coverage/',
   collectCoverageFrom: [
     'src/**/*.js',
     '!src/index.js',

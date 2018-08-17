@@ -1,28 +1,52 @@
 /* eslint-disable no-undef */
-import * as eUtils from '../src/eUtils';
+import replaceAll from '../src/replaceAll';
+import replace from '../src/replace';
+import toLower from '../src/toLower';
+import toUpper from '../src/toUpper';
+import trim from '../src/trim';
 
 // string 测试用例：验证各个方法
-test('string 测试用例：replace', () => {
-  const expectResult = 'kAA';
-  expect(eUtils.replace('dAA', 'd', 'k')).toEqual(expectResult);
+describe('replace test', () => {
+  describe('string 测试用例：replace', () => {
+    test('string 测试用例：replace return kAA', () => {
+      const expectResult = 'kAA';
+      expect(replace('dAA', 'd', 'k')).toEqual(expectResult);
+    });
+  });
 });
 
-test('string 测试用例：replaceAll', () => {
-  const expectResult = 'aAAa';
-  expect(eUtils.replaceAll('kkAAkk', 'kk', 'a')).toEqual(expectResult);
+describe('replaceAll test', () => {
+  describe('string 测试用例：replaceAll', () => {
+    test('string 测试用例：replaceAll return aAAa', () => {
+      const expectResult = 'aAAa';
+      expect(replaceAll('kkAAkk', 'kk', 'a')).toEqual(expectResult);
+    });
+  });
 });
 
-test('string 测试用例：trim', () => {
-  const expectResult = 'AA';
-  expect(eUtils.trim('dAA', 'd')).toEqual(expectResult);
+describe('trim test', () => {
+  describe('string 测试用例：trim', () => {
+    test('string 测试用例：trim return AA', () => {
+      const expectResult = 'AA';
+      expect(trim('dAA', 'd')).toEqual(expectResult);
+    });
+  });
 });
 
-test('string 测试用例：toUpper', () => {
-  const expectResult = 'AAA--';
-  expect(eUtils.toUpper('aaa--')).toEqual(expectResult);
+describe('toUpper test', () => {
+  describe('string 测试用例：toUpper', () => {
+    test('string 测试用例：toUpper return AAA---', () => {
+      const expectResult = 'AAA--';
+      expect(toUpper('aaa--')).toEqual(expectResult);
+    });
+  });
 });
 
-test('string 测试用例：toLower', () => {
-  const expectResult = 'aaa--';
-  expect(eUtils.toLower('AAA--')).toEqual(expectResult);
+describe('toLower test', () => {
+  describe('string 测试用例：toLower', () => {
+    test('string 测试用例：toLower return aaa---', () => {
+      const expectResult = 'aaa--';
+      expect(toLower('AAA--')).toEqual(expectResult);
+    });
+  });
 });

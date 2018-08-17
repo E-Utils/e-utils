@@ -12,3 +12,6 @@ yarn-debug.log*
 *.ntvs*
 *.njsproj
 *.sln
+
+#ingore directory
+/test/coverage

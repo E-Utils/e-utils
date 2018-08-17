@@ -9,7 +9,7 @@
     "watch": "rollup --config build/rollup.dev.conf.js -w",
     "start": "npm run dev && npm run watch",
     "dev": "serve dist",
-    "test": "jest --config ./jest.conf.js"
+    "test": "jest --coverage --config ./jest.conf.js"
   },
   "keywords": [
     "E-Utils",
