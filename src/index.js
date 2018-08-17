@@ -1,4 +1,4 @@
-import sayHello from './test';
+import sayHello from './hello';
 
 export default {
   sayHello,

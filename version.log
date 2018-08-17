@@ -1,0 +1,19 @@
+一、 EUtils一期
+  1. dateFormat;
+  2. getUrlParam;
+  3. setUrlParam;
+  4. replace;
+  5. replaceAll;
+  6. toLower;
+  7. toUpper;
+  8. trim;
+
+二、EUtils二期
+  1. 生成唯一key（react列表渲染用）－ generateUniqueKey;
+  2. getCookie;
+  3. deleteCookie;
+  4. setCookie;
+  5. 对象属性深层检测;
+  6. 深层对象取值;
+  7. 数组indexOf;
+  8. 数组的交集并集;
