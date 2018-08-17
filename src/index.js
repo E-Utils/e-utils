@@ -6,8 +6,10 @@ import replaceAll from './replaceAll';
 import trim from './trim';
 import toUpper from './toUpper';
 import toLower from './toLower';
+import sayHello from './hello';
 
 export default {
+  sayHello,
   dateFormat,
   setUrlParam,
   getUrlParam,
