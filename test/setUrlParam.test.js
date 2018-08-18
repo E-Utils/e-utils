@@ -20,6 +20,6 @@ test('setUrlParam 测试用例-2:', () => {
     title: 'enen',
   };
   // 因直接运行测试用例时，window.location.href为about:blank
-  const expectResult = 'about:blank?id=2&title=enen';
+  const expectResult = 'http://localhost/?id=2&title=enen';
   expect(setUrlParam(params)).toEqual(expectResult);
 });
