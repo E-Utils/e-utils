@@ -1,14 +1,13 @@
 {
-  "name": "e-utils",
-  "version": "1.1.0",
+  "name": "eutilspackage",
+  "version": "1.1.1",
   "description": "E-Utils -- Ewt front end common js lib!",
-  "main": "src/index.js",
-  "lib": "dist/eUtils.min.js",
+  "main": "dist/eutils.min.js",
+  "src": "src/index.js",
   "scripts": {
     "build": "rollup --config build/rollup.prod.conf.js",
-    "watch": "rollup --config build/rollup.dev.conf.js -w",
-    "start": "npm run dev && npm run watch",
-    "dev": "serve dist",
+    "start": "npm run dev",
+    "dev": "rollup --config build/rollup.dev.conf.js -w",
     "test": "jest --coverage --config ./jest.conf.js"
   },
   "keywords": [

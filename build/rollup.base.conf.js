@@ -7,9 +7,9 @@ import { eslint } from 'rollup-plugin-eslint';
 import pkg from '../package.json';
 
 export default {
-  input: pkg.main,
+  input: pkg.src,
   output: {
-    file: pkg.lib,
+    file: pkg.main,
     format: 'umd',
     name: 'EUtils',
     sourcemap: true
