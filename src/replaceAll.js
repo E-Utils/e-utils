@@ -22,7 +22,18 @@ function replaceAll(...args) {
   const str = args[0];
   const sourcement = args[1];
   const replacement = args[2];
-  const raRegExp = new RegExp(sourcement, 'g');
+  let raRegExp;
+  const strType = Object.prototype.toString.call(sourcement);
+  if(strType === '[object RegExp]') {
+    let _sourcement = sourcement;
+    if(_sourcement.flags.indexOf('g') <= -1) {
+      _sourcement = RegExp(_sourcement.source, _sourcement.flags + 'g');
+    }
+    raRegExp = _sourcement;
+  }
+  if(strType === '[object String]') {
+    raRegExp = new RegExp(sourcement, 'g');
+  }
   return str.replace(raRegExp, replacement);
 }
 
