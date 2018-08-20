@@ -1,6 +1,6 @@
 {
-  "name": "eutilspackage",
-  "version": "1.1.1",
+  "name": "eutils",
+  "version": "1.1.0",
   "description": "E-Utils -- Ewt front end common js lib!",
   "main": "dist/eutils.min.js",
   "src": "src/index.js",
@@ -14,7 +14,7 @@
     "E-Utils",
     "ewt"
   ],
-  "author": "E-Utils_Group",
+  "author": "EUtils_Group",
   "license": "ISC",
   "devDependencies": {
     "babel-core": "^6.26.3",
