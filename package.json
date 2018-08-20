@@ -8,7 +8,7 @@
     "build": "rollup --config build/rollup.prod.conf.js",
     "start": "npm run dev",
     "dev": "rollup --config build/rollup.dev.conf.js -w",
-    "test": "jest --coverage --config ./jest.conf.js"
+    "test": "jest --config ./jest.conf.js --coverage"
   },
   "keywords": [
     "E-Utils",

@@ -22,7 +22,7 @@ const dateFormat = (date, format) => {
     return date;
   }
 
-  let formattedDate;
+  let formattedDate = format;
   date = new Date(date);
 
   const regObj = {
