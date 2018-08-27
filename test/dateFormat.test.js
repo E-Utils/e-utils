@@ -1,13 +1,13 @@
 import dateFormat from '../src/dateFormat';
 
-describe('Date test', () => {
+describe('Date format test', () => {
   const timestamp = 1531643785284;
   const date = new Date(timestamp);
   const format = 'yyyy-MM-dd';
   const formatAll = 'yyyy-MM-dd hh:mm:ss';
 
   describe('Function dateFormat test - dateFormat(date, format)', () => {
-    test('Argument date is timestramp, format is "yyyy-MM-dd": ', () => {
+    test('Argument date is timestramp, format is "yyyy-MM-dd": return "2018-07-15"', () => {
       expect(dateFormat(timestamp, format)).toBe('2018-07-15');
     });
 

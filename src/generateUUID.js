@@ -16,11 +16,11 @@
  */
 
 const generateUUID = () => {
-  const uuid =  'xxxx-xxxx-xxxx-xxxx-xxxx'.replace(/[xy]/g, function(char) {
+  const uuid =  'xxxx-xxxx-xxxx-xxxx-xxxx'.replace(/[x]/g, function() {
     const randomNum = Math.random() * 16 | 0;
-    const newChar = char === 'x' ? randomNum : (randomNum & 0x3 | 0x8);
+    const newChar = randomNum.toString(16);
 
-    return newChar.toString(16);
+    return newChar;
   });
 
   return uuid;
