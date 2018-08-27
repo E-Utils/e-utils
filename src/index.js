@@ -6,10 +6,9 @@ import replaceAll from './replaceAll';
 import trim from './trim';
 import toUpper from './toUpper';
 import toLower from './toLower';
-// import sayHello from './hello';
+import generateUUID from './generateUUID';
 
 export default {
-  // sayHello,
   dateFormat,
   setUrlParam,
   getUrlParam,
@@ -18,4 +17,5 @@ export default {
   trim,
   toUpper,
   toLower,
+  generateUUID,
 };
