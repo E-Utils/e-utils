@@ -1,5 +1,6 @@
 import json from 'rollup-plugin-json';
 import resolve from 'rollup-plugin-node-resolve';
+import commonjs from 'rollup-plugin-commonjs';
 import buble from 'rollup-plugin-buble';
 // import babel from 'rollup-plugin-babel';
 import es3 from 'rollup-plugin-es3';
@@ -19,6 +20,7 @@ export default {
   },
   plugins: [
     resolve(),
+    commonjs(),
     json(),
     eslint({
       include: 'src/**',

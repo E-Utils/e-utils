@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head lang='en'>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width'>
-	<title>EUtils Test Page!</title>
-	<style>
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			color: #333;
-			font-weight: 300;
-		}
-	</style>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>EUtils Test Page!</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
-	<h1>Page For EUtils Test!</h1>
-  <script src='./dist/eutils.min.js'></script>
-  <script>
-		const date = EUtils.dateFormat(1531643785284, 'yyyy-M-d');
-		console.log(date);
-		const uuid = EUtils.generateUUID();
-		console.log(uuid);
-  </script>
+<h1>Page For EUtils Test!</h1>
+<script src='./dist/eUtils.min.js'></script>
+<script>
+  EUtils.setCookie('str', 'abcdefg');
+  EUtils.setCookie('obj', {name: 'value'});
+  console.log(EUtils.getCookie('str'));
+  console.log(EUtils.getCookie('obj'));
+  console.log(EUtils.getCookie('obj', true));
+  EUtils.removeCookie('str');
+  EUtils.removeCookie('obj');
+  console.log(EUtils.getCookie('str'));
+  console.log(EUtils.getCookie('obj'));
+  console.log(EUtils.getCookie('obj', true));
+</script>
 </body>
 </html>
