@@ -9,7 +9,7 @@
   8. trim;
 
 二、EUtils二期
-  1. 生成唯一key（react列表渲染用）－ generateUniqueKey; - yhm
+  1. 生成唯一key（react列表渲染用）－ generateUUID; - yhm
   2. getCookie; - cy
   3. deleteCookie; - cy
   4. setCookie; - cy
