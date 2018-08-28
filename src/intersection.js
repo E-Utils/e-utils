@@ -4,8 +4,8 @@
  * @since 1.1.0;
  * @category array;
  * @author fl2294;
- * @param oneArr {array} the first array incoming;
- * @param twoArr {array} the second array incoming;
+ * @param firstArr {array} the first array incoming;
+ * @param secondArr {array} the second array incoming;
  * @return {array};
  * @create_date 2018/07/19;
  * @modify_date 2018/07/19;
@@ -18,10 +18,10 @@
 import unique from './unique';
 
 //交集
-function cross(arr1, arr2) {
-  return unique(arr1).filter(o => {
-    return arr2.includes(o) ? o : null;
+function intersection(firstArr, secondArr) {
+  return unique(firstArr).filter(o => {
+    return secondArr.includes(o) ? o : null;
   });
 }
 
-export default cross;
+export default intersection;

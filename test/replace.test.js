@@ -8,5 +8,9 @@ describe('replace test', () => {
       const expectResult = 'kAA';
       expect(replace('dAA', 'd', 'k')).toEqual(expectResult);
     });
+    test('string 测试用例：只传一个参数,replace return kAA', () => {
+      const expectResult = 'kAA';
+      expect(replace('kAA')).toEqual(expectResult);
+    });
   });
 });

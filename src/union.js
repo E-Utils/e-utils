@@ -4,8 +4,8 @@
  * @since 1.1.0;
  * @category array;
  * @author fl2294;
- * @param oneArr {array} the first array incoming;
- * @param twoArr {array} the second array incoming;
+ * @param firstArr {array} the first array incoming;
+ * @param secondArr {array} the second array incoming;
  * @return {array};
  * @create_date 2018/07/19;
  * @modify_date 2018/07/19;
@@ -18,8 +18,8 @@
 import unique from './unique';
 
 //并集
-function union(oneArr, twoArr) {
-  return unique(oneArr.concat(twoArr));
+function union(firstArr, secondArr) {
+  return unique(firstArr.concat(secondArr));
 }
 
 export default union;

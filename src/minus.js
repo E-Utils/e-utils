@@ -4,8 +4,8 @@
  * @since 1.1.0;
  * @category array;
  * @author fl2294;
- * @param oneArr {array} the first array incoming;
- * @param twoArr {array} the second array incoming;
+ * @param firstArr {array} the first array incoming;
+ * @param secondArr {array} the second array incoming;
  * @return {array};
  * @create_date 2018/07/19;
  * @modify_date 2018/07/19;
@@ -18,9 +18,9 @@
 import unique from './unique';
 
 //差集
-function minus(oneArr, twoArr){
-  return unique(oneArr).filter(function(o){
-    return twoArr.includes(o) ? null : o;
+function minus(firstArr, secondArr){
+  return unique(firstArr).filter(function(o){
+    return secondArr.includes(o) ? null : o;
   });
 }
 

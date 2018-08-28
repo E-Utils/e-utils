@@ -10,12 +10,46 @@
  * @modify_date 2018/07/19;
  * @example
  *
- * unique([1, 3, 5, 6, 8, 8, 6, 3])
- * // => [1, 3, 5, 6, 8]
+ * unique([1, 3, 5, 6, 8, 8, 6, 3, [1,2], [1,2], {item: 1, 2: 3}, {item: 1, 2: 3}])
+ * // => [1, 3, 5, 6, 8, [1,2], {item: 1, 2: 3}]
  */
 
-function unique(arr) {
-  return [...new Set(arr)];
+function unique(arr, iterator) {
+  let _hash = (obj) => {
+    let power = 1;
+    let res = 0;
+    const string = JSON.stringify(obj, null, 2);
+    for (let i = 0, l = string.length; i < l; i++) {
+      switch (string[i]) {
+        case '{':
+          power *= 2;
+          break;
+        case '}':
+          power /= 2;
+          break;
+        case ' ':
+        case '\n':
+        case '\r':
+        case '\t':
+          break;
+        default:
+          res += string[i].charCodeAt(0) * power;
+      }
+    }
+    return res;
+  };
+
+  const _arr = [...new Set(arr)];
+  let __arr = [];
+  _arr.forEach(item => {
+    if(__arr.some(__item => _hash(__item) === _hash(item))) return;
+    __arr.push(item);
+  });
+  _hash = null;
+  if(iterator) {
+    __arr = __arr.filter(iterator);
+  }
+  return __arr;
 }
 
 export default unique;
