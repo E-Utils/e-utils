@@ -7,6 +7,7 @@ import trim from './trim';
 import toUpper from './toUpper';
 import toLower from './toLower';
 import generateUUID from './generateUUID';
+import indexOf from './indexOf';
 
 export default {
   dateFormat,
@@ -18,4 +19,5 @@ export default {
   toUpper,
   toLower,
   generateUUID,
+  indexOf,
 };
