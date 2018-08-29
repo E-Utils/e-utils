@@ -1,4 +1,4 @@
-# EUtils Scaffold
+# EUtils
 EWT前端工具库
 
 ## 一、安装
@@ -12,19 +12,19 @@ EWT前端工具库
 
 2.  npm/yarn安装
 ```
-  npm install eutils
+  npm install @ewt/eutils
 ```
 
 ## 二、使用
 1.  整包引用
 ```
-  import EUtils from 'eutils';
+  import EUtils from '@ewt/eutils';
 
   const demo = EUtils.test();
 ```
 2.  引用具体某一函数
 ```
-  import { test } from 'eutils';
+  import { test } from '@ewt/eutils';
 
   const demo = test();
 ```
