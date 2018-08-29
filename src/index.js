@@ -7,6 +7,10 @@ import trim from './trim';
 import toUpper from './toUpper';
 import toLower from './toLower';
 import generateUUID from './generateUUID';
+import union from './union';
+import intersection from './intersection';
+import minus from './minus';
+import unique from './unique';
 
 export default {
   dateFormat,
@@ -18,4 +22,8 @@ export default {
   toUpper,
   toLower,
   generateUUID,
+  union,
+  intersection,
+  minus,
+  unique,
 };
