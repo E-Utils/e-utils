@@ -11,6 +11,7 @@ import union from './union';
 import intersection from './intersection';
 import minus from './minus';
 import unique from './unique';
+import indexOf from './indexOf';
 
 export default {
   dateFormat,
@@ -26,4 +27,5 @@ export default {
   intersection,
   minus,
   unique,
+  indexOf,
 };
