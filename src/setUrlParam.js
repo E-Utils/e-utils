@@ -28,10 +28,12 @@ function setUrlParam(targetParams, originUrl = window.location.href) {
   let resultUrl = originUrl;
   const keys = Object.keys(targetParams);
   let i = keys.length;
-  let resArray = new Array(i);
+  let resArray =[];
+
   while(i--){
     resArray[i] = [keys[i], targetParams[keys[i]]];
   }
+
   resArray.forEach(([key, value]) => {
     const replaceReg = new RegExp(`(^|)${key}=([^&]*)(|$)`);
     const replaceText = `${key}=${value}`;
@@ -45,6 +47,7 @@ function setUrlParam(targetParams, originUrl = window.location.href) {
       resultUrl = `${resultUrl}${joinFlag}${replaceText}`;
     }
   });
+
   return resultUrl;
 }
 
