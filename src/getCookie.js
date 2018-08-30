@@ -3,7 +3,7 @@
  *
  * @since 1.1.0
  * @category storage;
- * @author caiyue823;
+ * @author caiyue2359;
  * @param name, {string} cookie name
  * @param isObject, {boolean} is the return an object,using JSON.parse
  * @return value;
