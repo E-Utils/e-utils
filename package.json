@@ -1,7 +1,7 @@
 {
   "name": "@ewt/eutils",
   "version": "1.1.0",
-  "description": "EUtils -- Ewt front end common js lib!",
+  "description": "EUtils -- Ewt front end generic methods library!",
   "main": "dist/eutils.min.js",
   "src": "src/index.js",
   "scripts": {
