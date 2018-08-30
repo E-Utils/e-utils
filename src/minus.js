@@ -16,11 +16,12 @@
  */
 
 import unique from './unique';
+import includes from './includes';
 
 //差集
 function minus(firstArr, secondArr){
   return unique(firstArr).filter(function(o){
-    return secondArr.includes(o) ? null : o;
+    return includes(secondArr, o) ? null : o;
   });
 }
 
