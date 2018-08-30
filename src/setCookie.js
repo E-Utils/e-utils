@@ -3,7 +3,7 @@
  *
  * @since 1.1.0
  * @category storage;
- * @author caiyue823;
+ * @author caiyue2359;
  * @param name {string}
  * @param value {string/object}, if value is an object, it will be parsed by JSON.stringify,
  * and you can get it as an object using getCookie('key',true)
@@ -13,7 +13,6 @@
  *  path:'/cookie/path',            {string},  indicating the path where the cookie is visible.
  *  secure:true                     {boolean}, indicating if the cookie transmission requires a secure protocol (https)
  * }
- * @return
  * @create_date 2018/08/27;
  * @modify_date 2018/08/27;
  *
