@@ -39,9 +39,8 @@ function unique(arr, iterator) {
     return res;
   };
 
-  const _arr = [...new Set(arr)];
   let __arr = [];
-  _arr.forEach(item => {
+  arr.forEach(item => {
     if(__arr.some(__item => _hash(__item) === _hash(item))) return;
     __arr.push(item);
   });
