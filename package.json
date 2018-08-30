@@ -1,18 +1,25 @@
 {
+<<<<<<< HEAD
   "name": "eutils",
   "version": "1.1.0",
   "description": "E-Utils -- Ewt front end common js lib!",
+=======
+  "name": "@ewt/eutils",
+  "version": "1.1.0",
+  "description": "EUtils -- Ewt front end generic methods library!",
+>>>>>>> release_v1.1.0
   "main": "dist/eutils.min.js",
   "src": "src/index.js",
   "scripts": {
     "build": "rollup --config build/rollup.prod.conf.js",
     "start": "npm run dev",
     "dev": "rollup --config build/rollup.dev.conf.js -w",
-    "test": "jest --coverage --config ./jest.conf.js"
+    "test": "jest --config ./jest.conf.js --coverage"
   },
   "keywords": [
     "E-Utils",
-    "ewt"
+    "ewt",
+    "EUtils"
   ],
   "author": "EUtils_Group",
   "license": "ISC",
@@ -25,12 +32,15 @@
     "open-browsers": "^1.1.1",
     "rollup": "^0.64.0",
     "rollup-plugin-babel": "^3.0.7",
-    "rollup-plugin-buble": "^0.19.2",
+    "rollup-plugin-commonjs": "^9.1.6",
     "rollup-plugin-es3": "^1.1.0",
     "rollup-plugin-eslint": "^5.0.0",
     "rollup-plugin-json": "^3.0.0",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^4.0.0",
     "serve": "^9.4.2"
+  },
+  "dependencies": {
+    "js-cookie": "^2.2.0"
   }
 }

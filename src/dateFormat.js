@@ -18,7 +18,11 @@
  */
 
 const dateFormat = (date, format) => {
-  let formattedDate;
+  if (!format) {
+    return date;
+  }
+
+  let formattedDate = format;
   date = new Date(date);
 
   const regObj = {
@@ -28,7 +32,7 @@ const dateFormat = (date, format) => {
     'm+': date.getMinutes(),
     's+': date.getSeconds(),
     'q+': Math.floor((date.getMonth() + 3) / 3),
-    S: date.getMilliseconds(),
+    'S': date.getMilliseconds(),
   };
   const keys = Object.keys(regObj);
 

@@ -6,16 +6,32 @@ import replaceAll from './replaceAll';
 import trim from './trim';
 import toUpper from './toUpper';
 import toLower from './toLower';
-// import sayHello from './hello';
+import generateUUID from './generateUUID';
+import union from './union';
+import intersection from './intersection';
+import minus from './minus';
+import unique from './unique';
+import indexOf from './indexOf';
+import setCookie from './setCookie';
+import getCookie from './getCookie';
+import removeCookie from './removeCookie';
 
 export default {
-  // sayHello,
   dateFormat,
   setUrlParam,
   getUrlParam,
-  replace,
   replaceAll,
+  replace,
   trim,
   toUpper,
   toLower,
+  generateUUID,
+  union,
+  intersection,
+  minus,
+  unique,
+  indexOf,
+  setCookie,
+  getCookie,
+  removeCookie
 };

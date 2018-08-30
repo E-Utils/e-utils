@@ -1,4 +1,4 @@
-# EUtils Scaffold
+# EUtils
 EWT前端工具库
 
 ## 一、安装
@@ -12,19 +12,19 @@ EWT前端工具库
 
 2.  npm/yarn安装
 ```
-  npm install eutils
+  npm install @ewt/eutils
 ```
 
 ## 二、使用
 1.  整包引用
 ```
-  import EUtils from 'eutils';
+  import EUtils from '@ewt/eutils';
 
   const demo = EUtils.test();
 ```
 2.  引用具体某一函数
 ```
-  import { test } from 'eutils';
+  import { test } from '@ewt/eutils';
 
   const demo = test();
 ```
@@ -38,3 +38,7 @@ EWT前端工具库
 
 ## 四、文档
 <a href="https://github.com/E-Utils/documents">文档地址</a>
+
+## 五、单个测试用例运行命令
+../node_modules/.bin/jest xxx.test.js --coverage
+如果写了条件判断 测试用例要覆盖条件判断if true和false两个情况 哪怕只写了if没有else也要把 if没被执行的情况覆盖到

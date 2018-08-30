@@ -15,7 +15,7 @@
  * @example
  *
  * replace('hello world', /o/, 'hi')
- * // => 'hi world'
+ * // => 'hellhi world'
  */
 
 function replace(...args) {
