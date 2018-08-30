@@ -1,6 +1,6 @@
 {
   "name": "@ewt/eutils",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "E-Utils -- Ewt front end common js lib!",
   "main": "dist/eutils.min.js",
   "src": "src/index.js",
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "E-Utils",
-    "ewt"
+    "ewt",
+    "EUtils"
   ],
   "author": "EUtils_Group",
   "license": "ISC",
@@ -20,7 +21,6 @@
     "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
     "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-loose": "^8.0.0",
     "eslint-plugin-jest": "^21.21.0",
     "jest": "^23.5.0",
     "open-browsers": "^1.1.1",
