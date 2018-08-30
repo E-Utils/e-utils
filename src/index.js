@@ -12,6 +12,9 @@ import generateUUID from './generateUUID';
 // import minus from './minus';
 // import unique from './unique';
 import indexOf from './indexOf';
+import setCookie from './setCookie';
+import getCookie from './getCookie';
+import removeCookie from './removeCookie';
 
 export default {
   dateFormat,
@@ -28,4 +31,7 @@ export default {
   // minus,
   // unique,
   indexOf,
+  setCookie,
+  getCookie,
+  removeCookie
 };

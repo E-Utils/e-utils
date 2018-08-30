@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head lang='en'>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width'>
-	<title>EUtils Test Page!</title>
-	<style>
-		body {
-			font-family: 'Helvetica Neue', Arial, sans-serif;
-			color: #333;
-			font-weight: 300;
-		}
-	</style>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width'>
+    <title>EUtils Test Page!</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+            color: #333;
+            font-weight: 300;
+        }
+    </style>
 </head>
 <body>
 	<h1>Page For EUtils Test!</h1>
@@ -29,7 +29,17 @@
 		var arr2 = [2, 3, 6, 7];
 		// console.log('intersection', EUtils.intersection(arr1, arr2));
 		// console.log('union',EUtils.union(arr1, arr2));
-		// console.log('minus:',EUtils.minus(arr1, arr2));
+    // console.log('minus:',EUtils.minus(arr1, arr2));
+    EUtils.setCookie('str', 'abcdefg');
+    EUtils.setCookie('obj', {name: 'value'});
+    console.log(EUtils.getCookie('str'));
+    console.log(EUtils.getCookie('obj'));
+    console.log(EUtils.getCookie('obj', true));
+    EUtils.removeCookie('str');
+    EUtils.removeCookie('obj');
+    console.log(EUtils.getCookie('str'));
+    console.log(EUtils.getCookie('obj'));
+    console.log(EUtils.getCookie('obj', true));
   </script>
 </body>
 </html>
