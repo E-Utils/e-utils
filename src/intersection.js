@@ -16,11 +16,12 @@
  */
 
 import unique from './unique';
+import includes from './includes';
 
 //交集
 function intersection(firstArr, secondArr) {
   return unique(firstArr).filter(o => {
-    return secondArr.includes(o) ? o : null;
+    return includes(secondArr, o) ? o : null;
   });
 }
 
