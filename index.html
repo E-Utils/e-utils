@@ -20,6 +20,12 @@
 	<script src="http://cdn.ewt360.com/common/js/html5shiv.min.js"></script>
   <script src='./dist/eutils.min.js'></script>
   <script>
+    document.write(
+      '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+      ':35729/livereload.js?snipver=1"></' + 'script>'
+    );
+  </script>
+  <script>
 		var date = EUtils.dateFormat(1531643785284, 'yyyy-M-d');
 		console.log(date);
 		var uuid = EUtils.generateUUID();
