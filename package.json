@@ -1,14 +1,8 @@
 {
-<<<<<<< HEAD
-  "name": "eutils",
-  "version": "1.1.0",
-  "description": "E-Utils -- Ewt front end common js lib!",
-=======
   "name": "@ewt/eutils",
   "version": "1.1.0",
   "description": "EUtils -- Ewt front end generic methods library!",
->>>>>>> release_v1.1.0
-  "main": "dist/eutils.min.js",
+  "main": "dist/eUtils.min.js",
   "src": "src/index.js",
   "scripts": {
     "build": "rollup --config build/rollup.prod.conf.js",
