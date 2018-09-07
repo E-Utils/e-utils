@@ -50,14 +50,14 @@ EWT前端工具库
 
 ### 2. 配置.babelrc
 ```
-{
-  "plugins":[["import",
-    {
-      "libraryName": "@ewt/eutils",
-      "libraryDirectory": "src", 
-      "camel2DashComponentName": false,
-      "camel2UnderlineComponentName": false, 
-    }
-  ]]
-}
+  {
+    "plugins":[["import",
+      {
+        "libraryName": "@ewt/eutils",
+        "libraryDirectory": "src", 
+        "camel2DashComponentName": false,
+        "camel2UnderlineComponentName": false, 
+      }
+    ]]
+  }
 ```
