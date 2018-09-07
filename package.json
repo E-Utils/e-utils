@@ -1,5 +1,5 @@
 {
-  "name": "@ewt/eutils",
+  "name": "@ewt/eutils11",
   "version": "1.1.0",
   "description": "EUtils -- Ewt front end generic methods library!",
   "main": "dist/eutils.min.js",
@@ -20,6 +20,7 @@
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-jest": "^23.4.2",
+    "babel-plugin-import": "^1.8.0",
     "babel-preset-env": "^1.7.0",
     "eslint-plugin-jest": "^21.21.0",
     "jest": "^23.5.0",
@@ -35,6 +36,7 @@
     "serve": "^9.4.2"
   },
   "dependencies": {
+    "@ewt/eutils": "^1.1.1",
     "js-cookie": "^2.2.0"
   }
 }

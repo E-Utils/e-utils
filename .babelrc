@@ -1,10 +1,12 @@
 {
   "presets": [
-    [
-      "env",
-      { 
-        "modules": "umd" 
-      }
-    ]
+    ["env", {"modules": false, "loose": true}]
+  ],
+  "plugins": [
+    ["import", {
+      "libraryName":"@ewt/eutils",
+      "libraryDirectory": "src",
+      "camel2DashComponentName": false
+    }]
   ]
 }
