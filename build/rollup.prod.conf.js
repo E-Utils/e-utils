@@ -4,7 +4,7 @@ import { uglify } from 'rollup-plugin-uglify';
 
 const prodConf = merge(baseConf, {
   plugins: [
-    uglify(),
+    //uglify(),
   ]
 });
 

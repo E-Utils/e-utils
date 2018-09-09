@@ -39,6 +39,11 @@ EWT前端工具库
 ## 四、文档
 <a href="https://github.com/E-Utils/documents">文档地址</a>
 
+|t1|t2|t3|
+|---|---|---|
+|t1|t2|t3|
+|t1|t2|t3|
+
 ## 五、单个测试用例运行命令
 ../node_modules/.bin/jest xxx.test.js --coverage
 如果写了条件判断 测试用例要覆盖条件判断if true和false两个情况 哪怕只写了if没有else也要把 if没被执行的情况覆盖到

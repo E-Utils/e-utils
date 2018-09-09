@@ -1,9 +1,10 @@
 import json from 'rollup-plugin-json';
 import resolve from 'rollup-plugin-node-resolve';
-import buble from 'rollup-plugin-buble';
-// import babel from 'rollup-plugin-babel';
+import babel from 'rollup-plugin-babel';
+import commonjs from 'rollup-plugin-commonjs';
+// import buble from 'rollup-plugin-buble';
 import es3 from 'rollup-plugin-es3';
-import { eslint } from 'rollup-plugin-eslint';
+import {eslint} from 'rollup-plugin-eslint';
 import pkg from '../package.json';
 
 export default {
@@ -19,17 +20,28 @@ export default {
   },
   plugins: [
     resolve(),
+    commonjs(),
     json(),
     eslint({
       include: 'src/**',
       exclude: ['node_modules/**', 'dist/**'],
     }),
-    buble({
-      objectAssign: 'Object.assign',
+    babel({
+      babelrc: false,
+      presets: [
+        ['env', {modules: false, loose: true}]
+      ],
+      plugins: [
+        ['import', {
+          'libraryName':'@ewt/eutils',
+          'libraryDirectory': 'src',
+          'camel2DashComponentName': false
+        }]
+      ],
       include: ['src/**', 'test/**'],
     }),
     es3({
       remove: ['defineProperty', 'freeze']
-    })
+    }),
   ],
 };
