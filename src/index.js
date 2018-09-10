@@ -15,6 +15,7 @@ import indexOf from './indexOf';
 import setCookie from './setCookie';
 import getCookie from './getCookie';
 import removeCookie from './removeCookie';
+import max from './max';
 
 export default {
   dateFormat,
@@ -33,5 +34,6 @@ export default {
   indexOf,
   setCookie,
   getCookie,
-  removeCookie
+  removeCookie,
+  max,
 };

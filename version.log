@@ -1,4 +1,4 @@
-一、 EUtils一期
+一、 EUtils一期 (v1.0.0)
   1. dateFormat;
   2. getUrlParam;
   3. setUrlParam;
@@ -8,7 +8,7 @@
   7. toUpper;
   8. trim;
 
-二、EUtils二期
+二、EUtils二期 (v1.1.0)
   1. 生成唯一key（react列表渲染用）－ generateUUID; - yhm
   2. getCookie; - cy
   3. deleteCookie; - cy
@@ -18,7 +18,7 @@
   7. 数组indexOf; - jgs
   8. 数组的交集并集; - fl
 
-三、EUtils三期
+三、EUtils三期 (v1.2.0)
   1.  数组求最大值： max
   2.  数组求最小值： min
   3.  数组求和： sum
