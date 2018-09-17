@@ -11,16 +11,17 @@
  * @modify_date 2018/07/19;
  * @example
  *
- * cross([1, 3, 5, 6], [8, 8, 6, 3])
+ * intersection([1, 3, 5, 6], [8, 8, 6, 3])
  * // => [3, 6]
  */
 
 import unique from './unique';
+import includes from './includes';
 
 //交集
 function intersection(firstArr, secondArr) {
   return unique(firstArr).filter(o => {
-    return secondArr.includes(o) ? o : null;
+    return includes(secondArr, o) ? o : null;
   });
 }
 

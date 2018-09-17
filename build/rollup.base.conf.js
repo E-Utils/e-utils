@@ -28,16 +28,7 @@ export default {
     }),
     babel({
       babelrc: false,
-      presets: [
-        ['env', {modules: false, loose: true}]
-      ],
-      plugins: [
-        ['import', {
-          'libraryName':'@ewt/eutils',
-          'libraryDirectory': 'src',
-          'camel2DashComponentName': false
-        }]
-      ],
+      presets: [['env', {modules: false, loose: true}]],
       include: ['src/**', 'test/**'],
     }),
     es3({

@@ -2,8 +2,8 @@
   "presets": [
     [
       "env",
-      {
-        "modules": "umd"
+      { 
+        "modules": "umd" 
       }
     ]
   ]
