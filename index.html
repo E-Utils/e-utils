@@ -13,40 +13,41 @@
     </style>
 </head>
 <body>
-	<h1>Page For EUtils Test!</h1>
-  <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
-	<script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
-	<!-- <script src="https://cdn.bootcss.com/babel-polyfill/6.26.0/polyfill.min.js"></script> -->
-	<script src="http://cdn.ewt360.com/common/js/html5shiv.min.js"></script>
-  <script src='./dist/eutils.min.js'></script>
-  <script>
-    document.write(
-      '<script src="http://' + (location.host || 'localhost').split(':')[0] +
-      ':35729/livereload.js?snipver=1"></' + 'script>'
-    );
-  </script>
-  <script>
-		var date = EUtils.dateFormat(1531643785284, 'yyyy-M-d');
-		console.log(date);
-		var uuid = EUtils.generateUUID();
-		console.log(uuid);
+<h1>Page For EUtils Test!</h1>
+<script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
+<script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
+<!-- <script src="https://cdn.bootcss.com/babel-polyfill/6.26.0/polyfill.min.js"></script> -->
+<script src="http://cdn.ewt360.com/common/js/html5shiv.min.js"></script>
+<script src='./dist/eutils.min.js'></script>
+<script>
+  document.write(
+    '<script src="http://' + (location.host || 'localhost').split(':')[0] +
+    ':35729/livereload.js?snipver=1"></' + 'script>'
+  );
+</script>
+<script>
+  var date = EUtils.dateFormat(1531643785284, 'yyyy-M-d');
+  console.log(date);
+  var uuid = EUtils.generateUUID();
+  console.log(uuid);
 
-		var arr1 = [1, 2, 3, 4];
-		var arr2 = [2, 3, 6, 7];
-		console.log('intersection', EUtils.intersection(arr1, arr2));
-		console.log('union',EUtils.union(arr1, arr2));
-    console.log('minus:',EUtils.minus(arr1, arr2));
-    EUtils.setCookie('str', 'abcdefg');
-    EUtils.setCookie('obj', {name: 'value'});
-    console.log(EUtils.getCookie('str'));
-    console.log(EUtils.getCookie('obj'));
-    console.log(EUtils.getCookie('obj', true));
-    console.log(EUtils.setUrlParam({id: 1, token: '807341-111-111aaa7a7a'}, 'http://www.ewt360.com'));
-    // EUtils.removeCookie('str');
-    // EUtils.removeCookie('obj');
-    // console.log(EUtils.getCookie('str'));
-    // console.log(EUtils.getCookie('obj'));
-    // console.log(EUtils.getCookie('obj', true));
-  </script>
+  var arr1 = [1, 2, 3, 4];
+  var arr2 = [2, 3, 6, 7];
+  console.log('intersection', EUtils.intersection(arr1, arr2));
+  console.log('union', EUtils.union(arr1, arr2));
+  console.log('minus:', EUtils.minus(arr1, arr2));
+  EUtils.setCookie('str', 'abcdefg');
+  EUtils.setCookie('obj', {name: 'value'});
+  console.log(EUtils.getCookie('str'));
+  console.log(EUtils.getCookie('obj'));
+  console.log(EUtils.getCookie('obj', true));
+  console.log(EUtils.setUrlParam({id: 1, token: '807341-111-111aaa7a7a'}, 'http://www.ewt360.com'));
+  // EUtils.removeCookie('str');
+  // EUtils.removeCookie('obj');
+  // console.log(EUtils.getCookie('str'));
+  // console.log(EUtils.getCookie('obj'));
+  // console.log(EUtils.getCookie('obj', true));
+
+</script>
 </body>
 </html>

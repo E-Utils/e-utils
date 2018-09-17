@@ -26,3 +26,5 @@ function position(elem, type='') {
         left: elem.offsetLeft
       });
 }
+
+export default position;

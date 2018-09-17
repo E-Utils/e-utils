@@ -44,3 +44,5 @@ function scrollTop(elem, target) {
     elem.scrollTop = target;
   }
 }
+
+export default scrollTop;

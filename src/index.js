@@ -15,6 +15,8 @@ import indexOf from './indexOf';
 import setCookie from './setCookie';
 import getCookie from './getCookie';
 import removeCookie from './removeCookie';
+import position from './position';
+import scrollTop from './scrollTop';
 
 export default {
   dateFormat,
@@ -33,5 +35,7 @@ export default {
   indexOf,
   setCookie,
   getCookie,
-  removeCookie
+  removeCookie,
+  position,
+  scrollTop
 };
