@@ -16,6 +16,8 @@ import setCookie from './setCookie';
 import getCookie from './getCookie';
 import removeCookie from './removeCookie';
 import max from './max';
+import has from './has';
+import isEmpty from './isEmpty';
 
 export default {
   dateFormat,
@@ -36,4 +38,6 @@ export default {
   getCookie,
   removeCookie,
   max,
+  has,
+  isEmpty
 };
