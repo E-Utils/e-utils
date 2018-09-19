@@ -16,6 +16,8 @@ import setCookie from './setCookie';
 import getCookie from './getCookie';
 import removeCookie from './removeCookie';
 import max from './max';
+import min from './min';
+import now from './now';
 
 export default {
   dateFormat,
@@ -36,4 +38,6 @@ export default {
   getCookie,
   removeCookie,
   max,
+  min,
+  now,
 };

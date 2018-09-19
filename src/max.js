@@ -19,7 +19,7 @@
 const max = (array) => {
   let result;
 
-  if (!array || array.length === 0) {
+  if (!array || !Array.isArray(array) || array.length === 0) {
     return result;
   }
 
