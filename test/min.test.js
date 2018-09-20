@@ -1,6 +1,6 @@
 import min from '../src/min';
 
-describe('Array function - min test: ', () => {
+describe('Math function - min test: ', () => {
   const numArr = [1, 3, 2, 6, 88];
   const charArr = ['A', 'B', 'C', 'D'];
   const obj = {a: 1};
@@ -13,7 +13,7 @@ describe('Array function - min test: ', () => {
     expect(min(charArr)).toBe('A');
   });
 
-  test('Array is not an array;', () => {
+  test('Array is not an object;', () => {
     expect(min(obj)).toBe(undefined);
   });
 });

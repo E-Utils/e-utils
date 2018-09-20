@@ -12,5 +12,7 @@ module.exports = {
     'src/**/*.js',
     '!src/index.js',
     '!**/node_modules/**',
+    '!src/.internal/**',
+    '!src/*Cookie*.js',
   ],
 };

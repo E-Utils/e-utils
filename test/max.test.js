@@ -1,6 +1,6 @@
 import max from '../src/max';
 
-describe('Array function - max test: ', () => {
+describe('Math function - max test: ', () => {
   const numArr = [1, 3, 2, 6, 88];
   const charArr = ['A', 'B', 'C', 'D'];
   const obj = {a: 1};
@@ -13,7 +13,7 @@ describe('Array function - max test: ', () => {
     expect(max(charArr)).toBe('D');
   });
 
-  test('Array is not an array;', () => {
+  test('Array is not an object;', () => {
     expect(max(obj)).toBe(undefined);
   });
 });
