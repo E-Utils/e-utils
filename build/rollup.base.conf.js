@@ -28,7 +28,7 @@ export default {
     }),
     babel({
       babelrc: false,
-      presets: [['env', {modules: false, loose: true}]],
+      presets: [['env', {modules: false, loose: true}], 'react'],
       include: ['src/**', 'test/**'],
     }),
     es3({

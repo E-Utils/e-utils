@@ -9,8 +9,9 @@ module.exports = {
   "globals": {
     "ENV": true,
   },
+  "parser":"babel-eslint",
   "extends": ["eslint:recommended", "plugin:jest/recommended"],
-  "plugins": ["jest"],
+  "plugins": ["jest", "react"],
   "parserOptions": {
     "sourceType": "module"
   },
