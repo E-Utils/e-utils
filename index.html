@@ -5,6 +5,10 @@
     <meta name='viewport' content='width=device-width'>
     <title>EUtils Test Page!</title>
     <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
         body {
             font-family: 'Helvetica Neue', Arial, sans-serif;
             color: #333;
@@ -14,6 +18,9 @@
 </head>
 <body>
 <h1>Page For EUtils Test!</h1>
+<div style="height: 1000px; margin: 200px; border:1px solid #0074D9; overflow: auto" id="domJS">
+    <div style="height:2000px; margin: 50px; border:1px solid red;"></div>
+</div>
 <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-shim.min.js"></script>
 <script src="https://cdn.bootcss.com/es5-shim/4.5.10/es5-sham.min.js"></script>
 <!-- <script src="https://cdn.bootcss.com/babel-polyfill/6.26.0/polyfill.min.js"></script> -->
@@ -42,6 +49,23 @@
   console.log(EUtils.getCookie('obj'));
   console.log(EUtils.getCookie('obj', true));
   console.log(EUtils.setUrlParam({id: 1, token: '807341-111-111aaa7a7a'}, 'http://www.ewt360.com'));
+
+  console.log("========测试scrollTop/position方法开始=========");
+  /*测试元素距离页面顶端的距离 参数：'left', 'right', ''*/
+  console.log('position left: ', EUtils.position(document.getElementById('domJS'), 'left'));
+  console.log('position right: ', EUtils.position(document.getElementById('domJS'), 'top'));
+  console.log('position {}: ', EUtils.position(document.getElementById('domJS')));
+  /*测试window|document滚动条位置 放开此注释
+  console.log('scrollTop', EUtils.scrollTop(window));
+  window.onscroll = function(){
+    console.log('scrollTop', EUtils.scrollTop(this));
+  };*/
+  /*测试元素的滚动条位置*/
+  document.getElementById('domJS').onscroll = function(){
+    console.log('scrollTop', EUtils.scrollTop(this));
+  };
+
+  console.log("==========测试scrollTop/position方法结束=========");
   // EUtils.removeCookie('str');
   // EUtils.removeCookie('obj');
   // console.log(EUtils.getCookie('str'));
