@@ -18,6 +18,7 @@ import removeCookie from './removeCookie';
 import max from './max';
 import min from './min';
 import now from './now';
+import toTimestamp from './toTimestamp';
 
 export default {
   dateFormat,
@@ -40,4 +41,5 @@ export default {
   max,
   min,
   now,
+  toTimestamp,
 };
