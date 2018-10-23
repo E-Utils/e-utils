@@ -9,7 +9,7 @@ import toLower from './toLower';
 import generateUUID from './generateUUID';
 import union from './union';
 import intersection from './intersection';
-import minus from './minus';
+import difference from './difference';
 import unique from './unique';
 import indexOf from './indexOf';
 import setCookie from './setCookie';
@@ -30,7 +30,7 @@ export default {
   generateUUID,
   union,
   intersection,
-  minus,
+  difference,
   unique,
   indexOf,
   setCookie,

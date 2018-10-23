@@ -1,10 +1,10 @@
 /**
- * two of array to minus,
+ * The obj is not Array,
  *
  * @since 1.3.0;
  * @category array;
  * @author fl2294;
- * @param firstArr {array} the first array incoming;
+ * @param obj {array} the first array incoming;
  * @return {boolean};
  * @create_date 2018/10/23;
  * @modify_date 2018/10/23;
