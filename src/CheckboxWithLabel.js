@@ -18,14 +18,7 @@ export default class CheckboxWithLabel extends React.Component {
 
   render() {
     return (
-      <label>
-        <input
-          type="checkbox"
-          checked={this.state.isChecked}
-          onChange={this.onChange}
-        />
-        {this.state.isChecked ? this.props.labelOn : this.props.labelOff}
-      </label>
+      <h1>hello </h1>
     );
   }
 }

@@ -1,5 +1,5 @@
 /**
- * two of array to minus,
+ * two of array to difference,
  *
  * @since 1.1.0;
  * @category array;
@@ -11,7 +11,7 @@
  * @modify_date 2018/07/19;
  * @example
  *
- * minus([1, 3, 5, 6], [8, 8, 6, 3, 2])
+ * difference([1, 3, 5, 6], [8, 8, 6, 3, 2])
  * // => [1, 5]
  */
 
@@ -19,10 +19,10 @@ import unique from './unique';
 import includes from './includes';
 
 //差集
-function minus(firstArr, secondArr){
+function difference(firstArr, secondArr){
   return unique(firstArr).filter(function(o){
     return includes(secondArr, o) ? null : o;
   });
 }
 
-export default minus;
+export default difference;
